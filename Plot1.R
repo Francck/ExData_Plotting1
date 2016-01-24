@@ -1,5 +1,8 @@
 plot1 <- function(){
   
+  # set to English:
+  Sys.setlocale("LC_ALL", "English")
+  
   data <- read.csv("./data/household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
   
   # set the data format 

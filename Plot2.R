@@ -2,6 +2,9 @@ plot2 <- function(){
   
   data <- read.csv("./data/household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
   
+  # set to English:
+  Sys.setlocale("LC_ALL", "English")
+  
   # set the data format 
   data$Date <- as.Date(data$Date, format="%d/%m/%Y")
   
